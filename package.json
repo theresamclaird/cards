@@ -1,0 +1,63 @@
+{
+  "name": "cards",
+  "version": "0.0.0",
+  "description": "A library of card components and functions.",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint --ext js,jsx src/",
+    "build": "rollup -c",
+    "watch": "rollup -c -w",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook",
+    "plop": "plop",
+    "patch": "npm version patch --force && npm run build && npm publish"
+  },
+  "author": "Theresa McLaird <theresa@mclairdfamily.com>",
+  "license": "UNLICENSED",
+  "devDependencies": {
+    "@babel/core": "^7.21.0",
+    "@babel/plugin-transform-runtime": "^7.21.0",
+    "@babel/preset-env": "^7.20.2",
+    "@babel/preset-react": "^7.18.6",
+    "@babel/runtime": "^7.21.0",
+    "@rollup/plugin-babel": "^6.0.3",
+    "@rollup/plugin-commonjs": "^24.0.1",
+    "@rollup/plugin-node-resolve": "^15.0.1",
+    "@storybook/addon-actions": "^6.5.16",
+    "@storybook/addon-essentials": "^6.5.16",
+    "@storybook/addon-interactions": "^6.5.16",
+    "@storybook/addon-links": "^6.5.16",
+    "@storybook/builder-webpack5": "^6.5.16",
+    "@storybook/manager-webpack5": "^6.5.16",
+    "@storybook/react": "^6.5.16",
+    "@storybook/testing-library": "^0.0.13",
+    "babel-loader": "^9.1.2",
+    "eslint": "^8.35.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-jsx-a11y": "^6.7.1",
+    "eslint-plugin-react": "^7.32.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-storybook": "^0.6.11",
+    "prop-types": "^15.8.1",
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0",
+    "rollup": "^3.17.3",
+    "rollup-plugin-cleaner": "^1.0.0",
+    "rollup-plugin-svg": "^2.0.0"
+  },
+  "dependencies": {
+    "@emotion/is-prop-valid": "^1.2.0",
+    "@emotion/react": "^11.10.6",
+    "@emotion/styled": "^11.10.6",
+    "@styled-system/css": "^5.1.5",
+    "@styled-system/should-forward-prop": "^5.1.5",
+    "@theresamclaird/atomic": "^0.0.46",
+    "styled-system": "^5.1.5"
+  },
+  "peerDependencies": {
+    "prop-types": "^15.8.1",
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0"
+  }
+}
