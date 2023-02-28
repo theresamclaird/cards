@@ -1,8 +1,7 @@
 {
-  "name": "cards",
+  "name": "@theresamclaird/cards",
   "version": "0.0.0",
   "description": "A library of card components and functions.",
-  "main": "index.js",
   "scripts": {
     "lint": "eslint --ext js,jsx src/",
     "build": "rollup -c",
@@ -14,6 +13,14 @@
   },
   "author": "Theresa McLaird <theresa@mclairdfamily.com>",
   "license": "UNLICENSED",
+  "module": "dist/index.js",
+  "main": "dist/cjs/index.js",
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
   "devDependencies": {
     "@babel/core": "^7.21.0",
     "@babel/plugin-transform-runtime": "^7.21.0",

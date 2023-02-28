@@ -28,7 +28,7 @@ export default [
         babelHelpers: 'runtime',
       }),
       nodeResolve({
-        extensions: ['.js', '.jsx', '.mjs', '.json'],
+        extensions: ['.js', '.jsx', '.mjs', '.json', '.svg'],
       }),
       svg(),
     ],
