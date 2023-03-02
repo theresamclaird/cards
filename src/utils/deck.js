@@ -1,18 +1,17 @@
-const jackSpades = require('../images/jack-spades.svg');
-const queenSpades = require('../images/queen-spades.svg');
-const kingSpades = require('../images/king-spades.svg');
-
-const jackHearts = require('../images/jack-hearts.svg');
-const queenHearts = require('../images/queen-hearts.svg');
-const kingHearts = require('../images/king-hearts.svg');
-
-const jackClubs = require('../images/jack-clubs.svg');
-const queenClubs = require('../images/queen-clubs.svg');
-const kingClubs = require('../images/king-clubs.svg');
-
-const jackDiamonds = require('../images/jack-diamonds.svg');
-const queenDiamonds = require('../images/queen-diamonds.svg');
-const kingDiamonds = require('../images/king-diamonds.svg');
+import {
+  jackSpades,
+  queenSpades,
+  kingSpades,
+  jackHearts,
+  queenHearts,
+  kingHearts,
+  jackClubs,
+  queenClubs,
+  kingClubs,
+  jackDiamonds,
+  queenDiamonds,
+  kingDiamonds,
+} from '../images';
 
 const getDeck = (
   suits = [
