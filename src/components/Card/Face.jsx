@@ -14,43 +14,43 @@ function Face({
 
   const topPipStyle = {
     J: {
-      heart: { top, right },
-      spade: { top, left },
-      diamond: { top, right },
-      club: { top, right },
+      hearts: { top, right },
+      spades: { top, left },
+      diamonds: { top, right },
+      clubs: { top, right },
     },
     Q: {
-      heart: { top, left },
-      spade: { top, right },
-      diamond: { top, right },
-      club: { top, right },
+      hearts: { top, left },
+      spades: { top, right },
+      diamonds: { top, right },
+      clubs: { top, right },
     },
     K: {
-      heart: { top, left },
-      spade: { top, left },
-      diamond: { top, left },
-      club: { top, left },
+      hearts: { top, left },
+      spades: { top, left },
+      diamonds: { top, left },
+      clubs: { top, left },
     },
   }[label][suit];
 
   const bottomPipStyle = {
     J: {
-      heart: { bottom, left },
-      spade: { bottom, right },
-      diamond: { bottom, left },
-      club: { bottom, left },
+      hearts: { bottom, left },
+      spades: { bottom, right },
+      diamonds: { bottom, left },
+      clubs: { bottom, left },
     },
     Q: {
-      heart: { bottom, right },
-      spade: { bottom, left },
-      diamond: { bottom, left },
-      club: { bottom, left },
+      hearts: { bottom, right },
+      spades: { bottom, left },
+      diamonds: { bottom, left },
+      clubs: { bottom, left },
     },
     K: {
-      heart: { bottom, right },
-      spade: { bottom, right },
-      diamond: { bottom, right },
-      club: { bottom, right },
+      hearts: { bottom, right },
+      spades: { bottom, right },
+      diamonds: { bottom, right },
+      clubs: { bottom, right },
     },
   }[label][suit];
 

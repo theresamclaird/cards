@@ -23,7 +23,7 @@ const getDeck = (
         Q: queenSpades,
         K: kingSpades,
       },
-      name: 'spade',
+      name: 'spades',
       pip: '♠',
     },
     {
@@ -33,7 +33,7 @@ const getDeck = (
         Q: queenHearts,
         K: kingHearts,
       },
-      name: 'heart',
+      name: 'hearts',
       pip: '♥',
     },
     {
@@ -43,7 +43,7 @@ const getDeck = (
         Q: queenClubs,
         K: kingClubs,
       },
-      name: 'club',
+      name: 'clubs',
       pip: '♣️',
     },
     {
@@ -53,7 +53,7 @@ const getDeck = (
         Q: queenDiamonds,
         K: kingDiamonds,
       },
-      name: 'diamond',
+      name: 'diamonds',
       pip: '♦️',
     },
   ],
