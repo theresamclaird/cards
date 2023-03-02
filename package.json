@@ -59,7 +59,7 @@
     "@emotion/styled": "^11.10.6",
     "@styled-system/css": "^5.1.5",
     "@styled-system/should-forward-prop": "^5.1.5",
-    "@theresamclaird/atomic": "^0.0.46",
+    "@theresamclaird/atomic": "^0.0.47",
     "styled-system": "^5.1.5"
   },
   "peerDependencies": {

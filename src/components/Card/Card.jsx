@@ -1,17 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Box } from '@theresamclaird/atomic';
+import Pips from './Pips';
 import Corner from './Corner';
 import Face from './Face';
-import Pips from './Pips';
 
 function Card({
-  rank, suit, value, sx, ...props
+  color, suit, face, label, pip, value, sx = {}, ...props
 }) {
-  const pip = {
-    hearts: '♥', diamonds: '♦️', clubs: '♣️', spades: '♠',
-  }[suit];
-  const color = suit === 'hearts' || suit === 'diamonds' ? 'red' : 'black';
   const pipStyle = {
     1: {
       '& > :first-of-type': {
@@ -19,7 +15,7 @@ function Card({
         gridRowEnd: 'span 8',
         gridColumnStart: 2,
         gridColumnEnd: 'span 4',
-        fontSize: '3em',
+        fontSize: '4em',
       },
     },
     2: {
@@ -387,14 +383,10 @@ function Card({
       },
     },
   }[value];
-
-  const isFace = rank === 'jack' || rank === 'queen' || rank === 'king';
-  const containerStyle = isFace ? {} : pipStyle;
-
+  const applesauce = face ? {} : pipStyle; // todo fix this.
   return (
     <Box
       sx={{
-        display: 'inline-block',
         boxShadow: '0 0 2px #666',
         position: 'relative',
         backgroundColor: 'white',
@@ -407,26 +399,21 @@ function Card({
       {...props}
     >
       <Box sx={{
-        px: '0.5rem',
-        width: '4rem',
-        height: `${4 * 1.4}rem`,
         display: 'grid',
         gridTemplateColumns: 'repeat(6, 1fr)',
         gridTemplateRows: 'repeat(16, 1fr)',
-        overflow: 'hidden',
-        ...containerStyle,
+        width: '4rem',
+        height: `${4 * 1.4}rem`,
+        p: '0.25rem',
+        ...applesauce,
       }}
       >
-        {isFace
-          ? <Face color={color} pip={pip} rank={rank} suit={suit} />
-          : <Pips color={color} pip={pip} value={value} />}
+        {face
+          ? <Face color={color} suit={suit} image={face} label={label} pip={pip} />
+          : <Pips count={value} pip={pip} color={color} />}
+        <Corner label={label} pip={pip} sx={{ top: '0.25rem', left: '0.25rem', color }} />
         <Corner
-          rank={rank}
-          pip={pip}
-          sx={{ top: '0.25rem', left: '0.25rem', color }}
-        />
-        <Corner
-          rank={rank}
+          label={label}
           pip={pip}
           sx={{
             bottom: '0.25rem', right: '0.25rem', transform: 'rotate(180deg)', color,
@@ -438,16 +425,17 @@ function Card({
 }
 
 Card.defaultProps = {
-  rank: 1,
-  suit: 'spades',
-  value: 1,
+  face: null,
   sx: {},
 };
 
 Card.propTypes = {
-  rank: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-  suit: PropTypes.string,
-  value: PropTypes.number,
+  color: PropTypes.string.isRequired,
+  suit: PropTypes.string.isRequired,
+  face: PropTypes.node,
+  label: PropTypes.string.isRequired,
+  pip: PropTypes.string.isRequired,
+  value: PropTypes.number.isRequired,
   sx: PropTypes.objectOf(PropTypes.any),
 };
 

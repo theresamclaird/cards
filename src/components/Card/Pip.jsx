@@ -2,18 +2,20 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Flex } from '@theresamclaird/atomic';
 
-function Pip({ pip, sx, ...props }) {
+function Pip({ symbol, sx, ...props }) {
   return (
     <Flex
       sx={{
-        fontSize: '1.5rem',
+        m: 0,
+        p: 0,
+        fontSize: '1.8rem',
         justifyContent: 'center',
         alignItems: 'center',
         ...sx,
       }}
       {...props}
     >
-      {pip}
+      {symbol}
     </Flex>
   );
 }
@@ -23,7 +25,7 @@ Pip.defaultProps = {
 };
 
 Pip.propTypes = {
-  pip: PropTypes.string.isRequired,
+  symbol: PropTypes.string.isRequired,
   sx: PropTypes.objectOf(PropTypes.any),
 };
 
