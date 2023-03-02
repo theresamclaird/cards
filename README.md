@@ -22,7 +22,7 @@ import { Card, Back } from '@theresamclaird/cards';
 
 ## Render a card back
 
-```js
+```jsx
 <Back />;
 ```
 
