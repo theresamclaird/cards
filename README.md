@@ -16,7 +16,7 @@ import { Card, Back } from '@theresamclaird/cards';
 
 ## Render a card
 
-```js
+```jsx
 <Card color="#000" suit="spades" label="A" pip="♠" value={1} />;
 ```
 
