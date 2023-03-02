@@ -1,18 +1,18 @@
-const jackSpades = require('./jack-spades.svg');
-const queenSpades = require('./queen-spades.svg');
-const kingSpades = require('./king-spades.svg');
+import jackSpades from './jack-spades.svg';
+import queenSpades from './queen-spades.svg';
+import kingSpades from './king-spades.svg';
 
-const jackHearts = require('./jack-hearts.svg');
-const queenHearts = require('./queen-hearts.svg');
-const kingHearts = require('./king-hearts.svg');
+import jackHearts from './jack-hearts.svg';
+import queenHearts from './queen-hearts.svg';
+import kingHearts from './king-hearts.svg';
 
-const jackClubs = require('./jack-clubs.svg');
-const queenClubs = require('./queen-clubs.svg');
-const kingClubs = require('./king-clubs.svg');
+import jackClubs from './jack-clubs.svg';
+import queenClubs from './queen-clubs.svg';
+import kingClubs from './king-clubs.svg';
 
-const jackDiamonds = require('./jack-diamonds.svg');
-const queenDiamonds = require('./queen-diamonds.svg');
-const kingDiamonds = require('./king-diamonds.svg');
+import jackDiamonds from './jack-diamonds.svg';
+import queenDiamonds from './queen-diamonds.svg';
+import kingDiamonds from './king-diamonds.svg';
 
 export {
   jackSpades,

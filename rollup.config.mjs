@@ -2,7 +2,7 @@ import cleaner from 'rollup-plugin-cleaner';
 import { babel } from '@rollup/plugin-babel';
 import { nodeResolve } from '@rollup/plugin-node-resolve';
 import commonjs from '@rollup/plugin-commonjs';
-import svg from 'rollup-plugin-svg';
+import image from '@rollup/plugin-image';
 
 export default [
   {
@@ -23,6 +23,7 @@ export default [
     plugins: [
       cleaner({ targets: ['./dist/'] }),
       commonjs(),
+      image(),
       babel({
         configFile: './babel.config.json',
         babelHelpers: 'runtime',
@@ -30,7 +31,6 @@ export default [
       nodeResolve({
         extensions: ['.js', '.jsx', '.mjs', '.svg'],
       }),
-      svg(),
     ],
   }
 ];
