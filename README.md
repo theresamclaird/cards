@@ -14,19 +14,19 @@ npm install --save @theresamclaird/cards
 import { Card, Back } from '@theresamclaird/cards';
 ```
 
-# Render a card
+## Render a card
 
 ```js
 <Card color="#000" suit="spades" label="A" pip="♠" value={1} />;
 ```
 
-# Render a card back
+## Render a card back
 
 ```js
 <Back />;
 ```
 
-# Generate a (default) deck of cards
+## Generate a (default) deck of cards
 
 ```js
 import { getDeck } from '@theresamclaird/cards';
@@ -34,7 +34,7 @@ import { getDeck } from '@theresamclaird/cards';
 const deck = getDeck();
 ```
 
-# Generate a Shoe
+## Generate a Shoe
 
 ```js
 import { getShoe } from '@theresamclaird/cards';
@@ -42,7 +42,7 @@ import { getShoe } from '@theresamclaird/cards';
 const shoe = getShoe(6); // Pass the number of decks needed for the shoe.
 ```
 
-# Shuffle & Cut
+## Shuffle & Cut
 
 ```js
 import { getDeck, shuffle } from '@theresamclaird/cards';
