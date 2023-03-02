@@ -9,7 +9,8 @@
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "plop": "plop",
-    "patch": "npm version patch --force && npm run build && npm publish"
+    "patch": "npm version patch --force && npm run build && npm publish",
+    "start": "start-storybook -p 80"
   },
   "author": "Theresa McLaird <theresa@mclairdfamily.com>",
   "license": "UNLICENSED",
