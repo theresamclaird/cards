@@ -1,6 +1,6 @@
 {
   "name": "@theresamclaird/cards",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "A library of card components and functions.",
   "scripts": {
     "lint": "eslint --ext js,jsx src/",
