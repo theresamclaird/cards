@@ -7,10 +7,10 @@ import Pip from './Pip';
 function Face({
   suit, color, image, label, pip,
 }) {
-  const top = '0.6rem';
-  const bottom = '0.6rem';
-  const left = '1.1rem';
-  const right = '1.1rem';
+  const top = '0.9rem';
+  const bottom = '0.9rem';
+  const left = '1.2rem';
+  const right = '1.2rem';
 
   const topPipStyle = {
     J: {
@@ -79,13 +79,13 @@ function Face({
       <Pip
         symbol={pip}
         sx={{
-          fontSize: '1.3rem', position: 'absolute', color, ...topPipStyle,
+          fontSize: '1rem', position: 'absolute', color, ...topPipStyle,
         }}
       />
       <Pip
         symbol={pip}
         sx={{
-          fontSize: '1.3rem', position: 'absolute', color, transform: 'rotate(180deg)', ...bottomPipStyle,
+          fontSize: '1rem', position: 'absolute', color, transform: 'rotate(180deg)', ...bottomPipStyle,
         }}
       />
     </>

@@ -404,7 +404,7 @@ function Card({
         gridTemplateRows: 'repeat(16, 1fr)',
         width: '4rem',
         height: `${4 * 1.4}rem`,
-        p: '0.25rem',
+        p: '0.33rem',
         ...applesauce,
       }}
       >

@@ -43,7 +43,7 @@ const getDeck = (
         K: kingClubs,
       },
       name: 'clubs',
-      pip: '♣️',
+      pip: '♣',
     },
     {
       color: '#f00',
@@ -53,7 +53,7 @@ const getDeck = (
         K: kingDiamonds,
       },
       name: 'diamonds',
-      pip: '♦️',
+      pip: '♦',
     },
   ],
   ranks = [

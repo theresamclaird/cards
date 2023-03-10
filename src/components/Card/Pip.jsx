@@ -8,7 +8,7 @@ function Pip({ symbol, sx, ...props }) {
       sx={{
         m: 0,
         p: 0,
-        fontSize: '1.8rem',
+        fontSize: '1.3rem',
         justifyContent: 'center',
         alignItems: 'center',
         ...sx,
