@@ -1,7 +1,6 @@
 import React, { Fragment } from 'react';
 import { Flex } from '@theresamclaird/atomic';
 import { Back } from './Back';
-import { getDeck } from '../../utils/deck';
 
 export default {
   title: 'Backs',
@@ -11,8 +10,6 @@ export default {
   },
 };
 
-const deck = getDeck();
-
 function DeckTemplate() {
   return (
     <Flex
@@ -21,11 +18,7 @@ function DeckTemplate() {
         gap: '1rem',
       }}
     >
-      {deck.map((card) => (
-        <Fragment key={`${card.label} of ${card.suit}}`}>
-          <Back />
-        </Fragment>
-      ))}
+      <Back />
     </Flex>
   );
 }
